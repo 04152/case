@@ -3,36 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
+    <title>Одностраничный сайт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="products.html">Продукты и услуги</a></li>
-                <li><a href="cases.html">Кейсы</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#products">Продукты и услуги</a></li>
+                <li><a href="#cases">Кейсы</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 class="animate-on-scroll">Добро пожаловать на наш сайт</h1>
-        <p class="animate-on-scroll">Это главная страница нашего проекта.</p>
+        <section id="home">
+            <h1 class="animate-on-scroll">Добро пожаловать на наш сайт</h1>
+            <p class="animate-on-scroll">Это главная страница нашего проекта.</p>
+        </section>
+        <section id="about">
+            <h1 class="animate-on-scroll">О нашей компании</h1>
+            <p class="animate-on-scroll">Информация о компании...</p>
+        </section>
+        <section id="products">
+            <h1 class="animate-on-scroll">Наши продукты и услуги</h1>
+            <p class="animate-on-scroll">Описание продуктов и услуг...</p>
+        </section>
+        <section id="cases">
+            <h1 class="animate-on-scroll">Наши кейсы и проекты</h1>
+            <p class="animate-on-scroll">Описание кейсов и проектов...</p>
+        </section>
+        <section id="blog">
+            <h1 class="animate-on-scroll">Наш блог</h1>
+            <p class="animate-on-scroll">Записи в блоге...</p>
+        </section>
+        <section id="contact">
+            <h1 class="animate-on-scroll">Наши контакты</h1>
+            <p class="animate-on-scroll">Контактная информация...</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Dionis Marketing. Все права защищены.</p>
     </footer>
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Контакты</h2>
-            <p>Контактная информация...</p>
-        </div>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
