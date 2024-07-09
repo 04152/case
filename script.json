@@ -1,0 +1,40 @@
+// Плавная прокрутка к секциям
+document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Модальное окно для контактов
+document.querySelectorAll('nav ul li a[href="contact.html"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const modal = document.getElementById('contact-modal');
+        modal.style.display = 'block';
+    });
+});
+
+document.querySelector('.close-button').addEventListener('click', function () {
+    const modal = document.getElementById('contact-modal');
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+    const modal = document.getElementById('contact-modal');
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
+});
+
+// Анимация при скролле для некоторых элементов
+window.addEventListener('scroll', function () {
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            element.classList.add('visible');
+        }
+    });
+});
