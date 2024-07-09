@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программа Наставничества</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+
+            header a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+
+            header ul {
+                padding: 0;
+                list-style: none;
+            }
+
+            header li {
+                float: left;
+                display: inline;
+                padding: 0 20px 0 20px;
+            }
+
+            header #branding {
+                float: left;
+            }
+
+                header #branding h1 {
+                    margin: 0;
+                }
+
+            header nav {
+                float: right;
+                margin-top: 10px;
+            }
+
+        section {
+            padding: 20px 0;
+            border-bottom: #e6e6e6 1px solid;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .content .main {
+                flex: 70%;
+                background: #fff;
+                padding: 20px;
+                margin-right: 10px;
+            }
+
+            .content .sidebar {
+                flex: 30%;
+                background: #f4f4f4;
+                padding: 20px;
+            }
+
+        .module {
+            margin-bottom: 20px;
+        }
+
+            .module h3 {
+                background: #333;
+                color: #fff;
+                padding: 10px;
+                margin: 0;
+            }
+
+            .module p {
+                padding: 10px;
+                background: #f4f4f4;
+            }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Программа Наставничества</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#mission">Миссия</a></li>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="mission">
+        <div class="container">
+            <h2>Миссия</h2>
+            <p>Описание миссии программы. Здесь размещается краткое объяснение целей и задач, а также важность программы для участников.</p>
+        </div>
+    </section>
+    <section id="program">
+        <div class="container">
+            <h2>Программа</h2>
+            <div class="content">
+                <div class="main">
+                    <div class="module">
+                        <h3>Модуль 1: Введение</h3>
+                        <p>Тестовое описание модуля. Задачи, подуроки и ожидаемые результаты.</p>
+                    </div>
+                    <div class="module">
+                        <h3>Модуль 2: Основы</h3>
+                        <p>Тестовое описание модуля. Задачи, подуроки и ожидаемые результаты.</p>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <h3>Изображения</h3>
+                    <img src="test_image1.jpg" alt="Автор программы" style="width:100%; margin-bottom:10px;">
+                    <img src="test_image2.jpg" alt="Участники программы" style="width:100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Контакты: info@example.com</p>
+    </footer>
+</body>
+</html>
